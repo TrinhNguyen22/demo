@@ -1,2 +1,0 @@
-# demo Nash Trophy
-+ Outline
