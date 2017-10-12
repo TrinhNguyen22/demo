@@ -1,0 +1,25 @@
+<section class="content-header">
+  <h1>
+    Dashboard
+    <small>Version 2</small>
+  </h1>
+  <!-- <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Dashboard</li>
+    </ol> -->
+</section>
+<section class="content">
+  <button type="button" class="btn btn-default" (click)="openModal(template)" [class.selected]="wasClicked">Modal</button>
+  <ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Modal</h4>
+        <button type="button" class="close pull-right" 
+                aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+        This is a modal.
+    </div>
+</ng-template>
+</section>
